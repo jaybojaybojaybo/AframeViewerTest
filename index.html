@@ -1,34 +1,34 @@
 <head>
-    
-    </head>
-    
-    <body>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
-            <script src="https://cdn.rawgit.com/donmccurdy/aframe-gamepad-controls/v0.5.0/dist/aframe-gamepad-controls.js"></script>
-        <a-scene embedded>
-            <a-entity>
-                <a-asset>
-                    <img src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" id="grid" crossorigin="anonymous">
-                    <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
-                    <a-asset-item id="exoFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150"></a-asset-item>
-                    <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous"
-                    />
-                    <img src="https://thumbs.gfycat.com/CorruptVioletGermanshorthairedpointer-max-1mb.gif" id="lightning" crossorigin="anonymous"
-                    />
-                </a-asset>
-    
-                <a-entity sound="src: url(assets/321103__nsstudios__blip1.wav); on: gamepadbuttondown:0" gamepad-controls="" look-controls="" position="0 1 0" camera="" scale="" rotation="" visible="">
-                </a-entity>
-                <a-sky src="https://2.bp.blogspot.com/-5gzAAXID1Aw/USoxixR5-wI/AAAAAAAAGrU/bGkNVCZ9NVs/s1600/sky_photo6.jpg" rotation="0 -90 0">
-                    <a-animation attribute="rotation" dur="25000" to="0 360 0" repeat="indefinite" easing="linear">
-                    </a-animation>
-                </a-sky>
-                <a-entity light="color: #ccccff; intensity: 1; type: ambient;" visible=""></a-entity>
-                <a-entity light="color: #ffaaff; intensity: 1.5" position="5 5 5"></a-entity>
-                <a-entity light="color: white; intensity: 0.5" position="-5 5 15"></a-entity>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+    <script src="dist/aframe-gamepad-controls.js"></script>
+</head>
+
+<body>
+    <a-scene embedded>
+        <a-entity>
+            <a-asset>
+                <img src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" id="grid" crossorigin="anonymous">
+                <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
+                <a-asset-item id="exoFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150"></a-asset-item>
+                <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous"
+                />
+                <img src="https://thumbs.gfycat.com/CorruptVioletGermanshorthairedpointer-max-1mb.gif" id="lightning" crossorigin="anonymous"
+                />
+            </a-asset>
+
+            <a-entity camera="userHeight: 1.6" look-controls gamepad-controls="flyEnabled: true" sound="src: url(assets/321103__nsstudios__blip1.wav);
+                       on: gamepadbuttondown:0">
             </a-entity>
-            <a-entity light="color: white; type: ambient;"></a-entity>
-            <a-entity geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0" material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;">
-            </a-entity>
-        </a-scene>
-    </body>
+            <a-sky src="https://2.bp.blogspot.com/-5gzAAXID1Aw/USoxixR5-wI/AAAAAAAAGrU/bGkNVCZ9NVs/s1600/sky_photo6.jpg" rotation="0 -90 0">
+                <a-animation attribute="rotation" dur="25000" to="0 360 0" repeat="indefinite" easing="linear">
+                </a-animation>
+            </a-sky>
+            <a-entity light="color: #ccccff; intensity: 1; type: ambient;" visible=""></a-entity>
+            <a-entity light="color: #ffaaff; intensity: 1.5" position="5 5 5"></a-entity>
+            <a-entity light="color: white; intensity: 0.5" position="-5 5 15"></a-entity>
+        </a-entity>
+        <a-entity light="color: white; type: ambient;"></a-entity>
+        <a-entity geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0" material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;">
+        </a-entity>
+    </a-scene>
+</body>
