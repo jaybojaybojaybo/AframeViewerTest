@@ -4,7 +4,7 @@
     
     <body>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
-            <script src="dist/aframe-gamepad-controls.js"></script>
+            <script src="https://cdn.rawgit.com/donmccurdy/aframe-gamepad-controls/v0.5.0/dist/aframe-gamepad-controls.js"></script>
         <a-scene embedded>
             <a-entity>
                 <a-asset>
@@ -17,7 +17,7 @@
                     />
                 </a-asset>
     
-                <a-entity camera="userHeight: 1.6" look-controls movement-controls="flyEnabled: true">
+                <a-entity sound="src: url(assets/321103__nsstudios__blip1.wav); on: gamepadbuttondown:0" gamepad-controls="" look-controls="" position="0 1 0" camera="" scale="" rotation="" visible="">
                 </a-entity>
                 <a-sky src="https://2.bp.blogspot.com/-5gzAAXID1Aw/USoxixR5-wI/AAAAAAAAGrU/bGkNVCZ9NVs/s1600/sky_photo6.jpg" rotation="0 -90 0">
                     <a-animation attribute="rotation" dur="25000" to="0 360 0" repeat="indefinite" easing="linear">
