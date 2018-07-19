@@ -3,11 +3,11 @@ A-frame environment for hardware-viewer and controller-navigation testing
 
 #### by Jasun Feddema
 
-##Description: 
+## Description: 
 
 #### Simple test app to check the functionality of gamepads in the Aframe 3D environment.
 
-##Setup:
+## Setup:
 
 - Follow manufacturer guidelines to pair your controller to your desktop or laptop.
 - Go to jaybojaybojaybo.github.io/AframeViewerTest.
