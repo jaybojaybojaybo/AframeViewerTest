@@ -10,7 +10,7 @@ A-frame environment for hardware-viewer and controller-navigation testing
 ## Setup:
 
 - Follow manufacturer guidelines to pair your controller to your desktop or laptop.
-- Go to jaybojaybojaybo.github.io/AframeViewerTest.
+- Go to jaybojaybojaybo.github.io/AframeViewerTest. Currently does not work in Chrome. Use Firefox or Edge instead.
 - Click once with the mouse on the 3D environment, you should then be able to use your controller with the 3D space.
 - Note: the app is currently setup to utilize double joystick controls to navigate the space:
     Left joystick:
